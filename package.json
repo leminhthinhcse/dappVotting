@@ -1,0 +1,23 @@
+{
+  "name": "dappvotting",
+  "version": "1.0.0",
+  "description": "dappVotting",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leminhthinhcse/dappVotting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leminhthinhcse/dappVotting/issues"
+  },
+  "homepage": "https://github.com/leminhthinhcse/dappVotting#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "solc": "^0.4.24"
+  }
+}
