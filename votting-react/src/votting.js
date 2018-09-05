@@ -1,6 +1,6 @@
 import web3 from "./web3";
 
-const address = "0x6920e73eb56b99c5efc5b8675c738f283078cb30";
+const address = "0x5935c86f7500a4d1ecffaece8ce438ae78d3b7ce";
 
 const abi = [
 	{
@@ -57,12 +57,7 @@ const abi = [
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"name": "ttime",
-				"type": "uint256"
-			}
-		],
+		"inputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -126,20 +121,6 @@ const abi = [
 			{
 				"name": "",
 				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "time",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -422,6 +403,20 @@ const abi = [
 	},
 	{
 		"constant": true,
+		"inputs": [],
+		"name": "vvoter_number",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [
 			{
 				"name": "",
@@ -429,6 +424,20 @@ const abi = [
 			}
 		],
 		"name": "vvoter_pick",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "vvoter_voted",
 		"outputs": [
 			{
 				"name": "",

@@ -27,7 +27,8 @@ contract votting {
     }
     svoter[] public vvoter;
     address[] public vvoter_address;
-    uint vvoter_number;
+    uint public vvoter_number;
+    uint public vvoter_voted;
     mapping (address =>uint) public vvoter_index;
     mapping (address => string) public vvoter_name;
     mapping (address => uint) public vvoter_weight;
@@ -36,14 +37,13 @@ contract votting {
     
     bool public started;
     address public manager_address;
-    uint public time;
-    
-    constructor(uint ttime) public {
+
+    constructor() public {
         started = false;
         manager_address = msg.sender;
-        time = ttime;
         vcandidate_number = 0;
         vvoter_number = 0;
+        vvoter_voted = 0;
     }
     
     modifier manager_modifier () {
@@ -107,6 +107,8 @@ contract votting {
         
         vvoter_pick[msg.sender] = tid;
         vvoter[vvoter_index[msg.sender]].pick = tid;
+        
+        vvoter_voted += vvoter_weight[msg.sender];
         
     }
     
